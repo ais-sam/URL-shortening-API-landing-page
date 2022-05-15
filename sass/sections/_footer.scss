@@ -1,0 +1,89 @@
+/* ============= ACTION ============ */
+footer{
+    padding: 2.5rem 0 3rem;
+    background-color: $very-dark-violet;
+    position: relative;
+    *{
+        color: white;
+    }
+    .container{
+        display: flex;
+        gap: 20px;
+        .footer__logo{
+            flex-basis: 30%;
+            
+        }
+        .footer__links{
+            flex-basis: 50%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            .links__title{
+                font-weight: 800;
+                margin-bottom: 15px;
+                & ~li{
+                    margin-bottom: 10px;
+                    a{
+                        color: $gray;
+                        font-weight: 600;
+                        &:hover{
+                            color: $cyan;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__socials{
+            flex-basis: 20%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            i{
+                font-size: 20px;
+                transition: 0.2 ease;
+            }
+            i:hover{
+                color:$cyan;
+            }
+            }
+        
+        @media screen and (max-width:992px) {
+            flex-wrap: wrap;
+            .footer__links{
+                flex-basis: 67%;
+            }
+            .footer__socials{
+                flex: 100%;
+            }
+        }
+        @media screen and (max-width:800px) {
+            .footer__logo{
+                width: fit-content;
+                margin: 20px auto 30px;
+                display: block;
+            }
+            display: block;
+            .footer__links{
+                display: block;
+                text-align: center;
+            }
+            .footer__socials{
+                margin: 40px 0 20px;
+            }
+            .links{
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .attribution { 
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 11px;
+        text-align: center;
+        a{
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}

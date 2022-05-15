@@ -1,0 +1,91 @@
+/* ============= HERO ============ */
+.hero{
+    padding-bottom: 110px;
+    .hero__content{
+        display: flex;
+        align-items: center;
+
+    }
+    .hero__text{
+        flex-basis: 50%;
+        h1{
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+        p{
+            max-width: 400px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            font-weight: 600
+        }
+
+        .btn{
+            @include btn(13px,25px,25px);
+            font-weight: 800;
+        }
+    }
+    .hero__img{
+        flex-basis: 50%;
+        img{
+            width: 100%;
+    }}
+
+
+    @media screen and (max-width:1200px) {
+        .hero__text{
+            h1{
+                font-size: 3.5rem;
+            }
+        }
+    }
+    @media screen and (max-width:992px) {
+        .hero__content{
+            flex-direction: column-reverse;
+            gap: 20px;
+            .hero__text{
+                text-align: center;
+                h1{
+                    font-size: 3rem;
+                }
+                p{
+                    margin: 15px auto 30px ;
+                }
+            }
+            .hero__img{
+                width: 90%;
+            }
+        }
+    }
+
+    @media screen and (max-width:670px){
+        .hero__content{
+            .hero__text{
+                h1{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:440px){
+        .hero__content{
+            .hero__text{
+                h1{
+                    font-size: 2rem;
+                }
+                .btn{
+                    font-size: 16px;
+                }
+            }
+            .hero__img{
+                width: 100%;
+            }
+
+        }
+    }
+
+}
+

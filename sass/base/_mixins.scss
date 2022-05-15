@@ -1,0 +1,15 @@
+@mixin btn($p-y,$p-x,$border-radius) {
+    color: white;
+    background-color: $cyan ;
+    font-weight:700 ;
+    padding: $p-y $p-x;
+    border-radius: $border-radius;
+    cursor: pointer;
+    &:hover{
+        background-color: hsl(180, 79%, 54%);
+    }
+    transition: .2s ease;
+}
+
+
+

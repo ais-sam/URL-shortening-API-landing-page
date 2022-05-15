@@ -1,0 +1,28 @@
+/* ============= ACTION ============ */
+.action{
+    padding: 5rem 0;
+    background: url("../../images/bg-boost-desktop.svg");
+    background-color: $Dark-violet;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    h3{
+        color: white;
+        font-weight: 800;
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    a{
+        @include btn(18px,40px,30px)
+    }
+    @media screen and (max-width:431px) {
+        background: url("../../images/bg-boost-mobile.svg");
+        background-color: $Dark-violet;
+        h3{
+            font-size: 1.7rem;
+        }
+
+    }
+}
